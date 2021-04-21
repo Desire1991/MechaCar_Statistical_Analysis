@@ -2,13 +2,13 @@
 
 ***Linear Regression to Predict MPG***
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+**1.Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
 The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset were the vehicles length and vehicles ground clearance. That is to say, the vehicles length and vehicles ground clearance have a significant impact on miles per gallon (MPG) on the MechaCar prototype. The vehicles weight, spoiler angle and all-wheel drive (AWD) had a random amount of variance with the dataset.
 
-Is the slope of the linear model considered to be zero? Why or why not?
+**2.Is the slope of the linear model considered to be zero? Why or why not?**
 The p-value from this dataset is 5.35e-11, is much smaller than the significance level that we’ve been using of 0.05% so we can reject our null hypothesis. This indicates that the slope from this linear model is not zero.
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+**3.Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 The r-squared value from this linear model is 0.7149, or ~71%. This means that about 71% of MPG predictions can be determined from this model so this modal does predict MPG of MechaCar prototypes effectivity.
 
 ![Linear Regression](https://user-images.githubusercontent.com/74233163/115502318-5b63c480-a23a-11eb-9835-398996eee129.png)
