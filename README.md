@@ -1,6 +1,6 @@
 # MechaCar_Statistical_Analysis
 
-##Linear Regression to Predict MPG##
+***Linear Regression to Predict MPG***
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset were the vehicles length and vehicles ground clearance. That is to say, the vehicles length and vehicles ground clearance have a significant impact on miles per gallon (MPG) on the MechaCar prototype. The vehicles weight, spoiler angle and all-wheel drive (AWD) had a random amount of variance with the dataset.
@@ -11,6 +11,7 @@ The p-value from this dataset is 5.35e-11, is much smaller than the significance
 Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 The r-squared value from this linear model is 0.7149, or ~71%. This means that about 71% of MPG predictions can be determined from this model so this modal does predict MPG of MechaCar prototypes effectivity.
 
+![Linear Regression](https://user-images.githubusercontent.com/74233163/115502318-5b63c480-a23a-11eb-9835-398996eee129.png)
 
 
 ***Summary Statistics on Suspension Coils***
@@ -18,10 +19,12 @@ The r-squared value from this linear model is 0.7149, or ~71%. This means that a
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch (PSI). Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 Examining our Suspension Total Summary, which takes into account all manufacturing lots, the variance for the coils is 62.29356 PSI. This is well under the MechaCar suspension coils requirement of under 100 PSI.
 
+![SuspensionTotalSummary](https://user-images.githubusercontent.com/74233163/115502396-7d5d4700-a23a-11eb-899f-7569d422a6ce.png)
 
 
 Taking a deeper drive and looking at each manufacturing lot individually, I noticed that Lot 1 (0.9795918 PSI) and Lot 2 (7.4693878 PSI) are well under the MechaCar suspension coils requirement of 100 PSI and have relatively low standard deviation. But, Lot 3 has variance of 170.2861224 PSI which is well over the MechaCar suspension coils requirement of 100 PSI and a relatively high standard deviation. This indicates to me that Lot 3 is causing variance in the Suspension Total Summary which accounts for all lots and Lot 3 clearly does not meet the design specification for the MechaCar suspension coils.
 
+![SuspensionLotSummary](https://user-images.githubusercontent.com/74233163/115502493-9b2aac00-a23a-11eb-870f-12a802aac1e9.png)
 
 
 ***T-Tests on Suspension Coils***
@@ -30,24 +33,28 @@ Taking a deeper drive and looking at each manufacturing lot individually, I noti
 
 Looking at the t-test that included all lots, the mean from the dataset is 1498.78 with a p-value of 0.06028. Using the significance level that we’ve been using of 0.05%, there is not enough evidence to reject the null hypothesis.
 
+![T-Test_AllLots](https://user-images.githubusercontent.com/74233163/115502568-beedf200-a23a-11eb-84cc-79a0b6352884.png)
 
 
 **Lot 1 Analysis**
 
 Lot 1 has a mean of 1500 and a p-value of 1. As a result, we cannot reject the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
 
+![T-TestLot1](https://user-images.githubusercontent.com/74233163/115502614-cf9e6800-a23a-11eb-99e2-fd9cbad4e6dd.png)
 
 
 **Lot 2 Analysis**
 
 Lot 2 has similar values as Lot 1. Lot 2 has a mean of 1500.2 and a p-value of 0.6072. As a result, we cannot reject the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
 
+![T-TestLot2](https://user-images.githubusercontent.com/74233163/115502627-d6c57600-a23a-11eb-99bc-ac71def9a7a4.png)
 
 
 **Lot 3 Analysis**
 
 On the other hand, Lot 3 has a mean of 1496.14 and a p-value of 0.04168, which is lower than the significance level that we’ve been using of 0.05%. As a result, we can reject the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
 
+![T-TestLot3](https://user-images.githubusercontent.com/74233163/115502643-dd53ed80-a23a-11eb-99b2-0aaa5851e990.png)
 
 
 **Study Design: MechaCar vs Competition**
